@@ -1,0 +1,43 @@
+.box__promociones{
+    display: $d-dflex;
+	padding-top: 4px;
+	justify-content: center;
+    background-color: $boxheader;
+    height: 5vh;
+    text-align: center;
+    color: $basic;
+}
+
+.logo{
+	box-align: left;
+    height: 7vh;
+
+}
+.iconos{
+    margin-top: $mx-1;
+    margin-right: $mx-1;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    margin-top: $mx-1;
+    display: $d-dflex;
+    height: 6vh;
+
+    ul{
+        display: $d-dflex;
+        li{
+            list-style: none;
+            justify-content: space-between;
+    
+            a{
+                font-size: $textsmall;
+                &:hover{
+                    color: $basic1
+                
+                }
+            }
+        }
+    }
+}

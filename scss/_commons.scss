@@ -1,0 +1,55 @@
+// Definimos varialbes globales
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+// definimos colores 
+
+$primary:#e9c5c7;
+$secondary:#EC8088;
+$main:#b85f5f;
+$boxheader:#887474;
+$basic:white;
+$basic1:black;
+$caja:#FFE6E6;
+$pie:#D9B1B1;
+
+
+
+//margin padding
+
+$px-1: 1em;
+$mx-1: 1em;
+
+//display
+$d-dflex:flex;
+$d-grid:grid;
+
+//sizing
+$w-50: 50%;
+$w-25:25%;
+
+h3{
+	font-style: $mainFont;
+	font-size:1.8rem;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1rem;
+	font-weight: 100px; ;
+
+}
+h4{
+	font-style:$mainFont;
+	font-size: 2.4rem;
+	letter-spacing: 0.2rem;
+	font-weight: 50px;
+	}
+
+h5{
+	font-style: $secondaryFont;
+	font-size: 20px;
+	letter-spacing: 0.8rem;	
+	
+	}
+
