@@ -1,0 +1,230 @@
+//index//
+@media only  screen  and (max-width: 480px){
+
+    .prom{
+            display: grid;
+            padding-top: 4px;
+            margin-left: 2px;
+            margin-right: 2px;
+            justify-content: center;
+            text-align: center;
+            width: 400px;
+        }
+    
+    nav{
+            display: grid;
+            top: 0;
+            height:15vh;
+            background-color: white;
+            margin-left: 2px;
+            margin-right: 2px;
+            grid-template-columns: 160px 140px 130px;
+            width: 480px;
+            }
+    
+            nav ul li a {
+                color: #545252;
+                font-size: 13px; 
+                font-weight: 100px; 	/*peso de la de la fuente */
+                text-decoration: none; /* sacamos el subrayado*/
+                background-color: white;
+                display: inline-block;
+            
+        }
+    .logo
+        {
+            height: 5vh;
+            align-items: flex-start;}
+    
+    .contenedor1
+    {
+        display: grid;
+        grid-template-columns: 220px 220px;
+        justify-items: space-around;
+        justify-content: space-around;
+        grid-template-rows: 300px;
+    
+        
+    }
+        .contenedor1 img{
+            width: 230px;
+            height: 300px;
+        }
+        .contenedor1 video{
+            height: 300px;
+            margin-right: 4rem;
+            width: 250px;
+            margin-left: 4rem;
+        }
+    .promo{
+            display: grid;
+            height: 60px;
+            background-color: #ECCFCF;
+            text-align: center;
+            width: 380px;
+            justify-content: center;
+            
+            border-style: double;
+            letter-spacing: 0.2rem;
+            font-style: italic;
+            font-size: 20px;
+    
+        }
+        .contenedor2{
+            display: grid;
+            grid-template-columns:repeat(3,120px);
+            grid-template-rows: 250px 250px;
+            justify-content: space-around;
+            margin-left: 1px;
+            width: 380px;
+        
+        }
+    
+    .contenedor4{
+            display: grid;
+            grid-template-columns:140px 110px 185px;
+            justify-content:space-between ;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 350px;
+        
+        }
+    .margen{
+        margin-right: 2rem;
+    }
+    .elegidos
+    {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 110px 110px 110px 110px;
+        justify-content: center;
+        margin-left: 2px;
+        margin-bottom: 2rem;
+        
+    }
+    .contenedor3
+    {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        margin-left: 2px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-right:2px ;
+        width: 360px;
+        
+    }
+    }
+    
+@media only  screen and (min-width:481px) and (max-width: 780px){
+        
+    .prom{
+        display: grid;
+        padding-top: 4px;
+        margin-left: 2px;
+        margin-right: 2px;
+        justify-content: center;
+        text-align: center;
+        width: 780px;
+    }
+    
+    nav{
+        display: grid;
+        top: 0;
+        height:10vh;
+        background-color: white;
+        margin-left: 2px;
+        margin-right: 2px;
+        grid-template-columns: 190px 340px 120px;
+        width: 780px;
+        }
+    
+        nav ul li a {
+            color: #545252;
+            font-size: 16px; 
+            background-color: white;
+            display: inline-block;
+        
+    }
+    .logo
+    {
+        height: 6.5vh;
+        align-items: flex-start;}
+    
+    .contenedor1
+    {
+    display: grid;
+    grid-template-columns: 360px 380px;
+    justify-items: space-around;
+    justify-content: space-around;
+    grid-template-rows: 300px;
+    
+    }
+    .contenedor1 img{
+        width: 240px;
+        height: 300px;
+    }
+    .contenedor1 video{
+        height: 300px;
+        margin-right: 2px;
+        width: 320px;
+        margin-left: 2px;
+    }
+    .promo{
+        display: grid;
+        height: 60px;
+        background-color: #ECCFCF;
+        text-align: center;
+        width: 750px;
+        justify-content: center;
+        
+        border-style: double;
+        letter-spacing: 0.2rem;
+        font-style: italic;
+        font-size: 20px;
+    }
+    .contenedor2{
+        display: grid;
+        grid-template-columns:150px 150px 150px;
+        grid-template-rows: 300px 300px;
+        margin-left: 0px;
+        width: 600px;
+    
+    }
+    
+    
+    
+    
+    .contenedor4{
+        display: grid;
+        grid-template-columns:130px 140px 140px;
+        justify-content:space-between ;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    
+    }
+    .margen{
+    margin-right: 0rem;
+    }
+    .elegidos
+    {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    justify-content:flex-start;
+    margin-bottom: 2rem;
+    
+    }
+    .contenedor3
+    {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 2px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-right:2px ;
+    width: 580px;
+    
+    }}
+    

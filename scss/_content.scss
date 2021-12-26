@@ -20,20 +20,16 @@ main{
 
 .contenedor1
     {
-        display: $d-grid;
-        grid-template-columns: 900px 600px;
+        display: $d-dflex;
         margin-left: 2px;
         justify-items: space-around;
         justify-content: space-around;
         margin-right: 2px;
         margin-top: 2px; }
     
-        .contenedor1 img{
-            height: 600px;
-            width: 600px; }
         .contenedor1 iframe{
             height: 600px;
-            width: 900px; }
+            width: 100%; }
 
 .contenedor2
         {
@@ -114,11 +110,15 @@ main{
         display: $d-grid;
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
-        margin-left: 8rem;
+        margin-left: 4rem;
         margin-bottom: 2rem;
     }
 
 // mujer
+.list{
+    list-style: none;
+
+}
 .texto_titulo{
     color: $main;
 }
@@ -160,23 +160,21 @@ main{
 	display: $d-grid;
 	grid-template-columns: repeat(5, 1fr);
 	justify-content: center;
-	margin-left: 3rem;
+	margin-left: 2rem;
 	margin-bottom: 2rem;
 	margin-top: 1rem;
+    text-align: center;
 	
 }
 
-.box_contenido2 p {
-	text-align: center;
 
-}
 
 .box_contenido3{
 	margin-top: 2rem;
 	display: $d-grid;
 	grid-template-columns: repeat(5, 1fr);
 	justify-content: center;
-	margin-left: 3rem;
+	margin-left: 2rem;
 	margin-bottom: 2rem;
 }
 
@@ -203,6 +201,120 @@ main{
 
 .portada_Natacion{
     display: $d-dflex;
+}
+
+//index
+
+
+@media only  screen  and (max-width: 480px){
+
+    .contenedor1
+    {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        justify-items: space-around;
+        justify-content: space-around;
+        grid-template-rows: 600px;
+        width: 480px;   } 
+
+        
+
+
+    .elegidos
+    {
+        margin-top: 2rem;
+        display: $d-grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+//mujer
+
+    .box_contenido2{
+        margin-top: 2rem;
+        display: $d-grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+        
+    }
+
+    .box_contenido3{
+        margin-top: 2rem;
+        display: $d-grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    .portadas_inferiores{
+        display: $d-grid;
+        grid-template-columns: 200px 250px;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+
+}
+
+
+@media only  screen and (min-width:481px) and (max-width: 780px){
+	.contenedor1
+    {
+    display:$d-dflex;
+    justify-items: space-around;
+    justify-content: space-around;
+    grid-template-rows: 600px;
+    width: 780px;
+
+    }
+
+    .elegidos
+    {
+        margin-top: 2rem;
+        display: $d-grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+//mujer
+
+    .box_contenido2{
+        margin-top: 2rem;
+        display: $d-grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+        
+    }
+
+    .box_contenido3{
+        margin-top: 2rem;
+        display: $d-grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    .portadas_inferiores{
+        display: $d-grid;
+        grid-template-columns: 350px 400px;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+
+
 }
 
 

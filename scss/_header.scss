@@ -1,11 +1,17 @@
+
+ @mixin colorbox{
+    background-color:$boxheader;
+    color: $basic;
+ }
+
+
 .box__promociones{
     display: $d-dflex;
 	padding-top: 4px;
 	justify-content: center;
-    background-color: $boxheader;
     height: 5vh;
     text-align: center;
-    color: $basic;
+    @include colorbox
 }
 
 .logo{
@@ -24,20 +30,74 @@ nav{
     margin-top: $mx-1;
     display: $d-dflex;
     height: 6vh;
+    
+    
 
     ul{
         display: $d-dflex;
+    
         li{
             list-style: none;
             justify-content: space-between;
     
             a{
-                font-size: $textsmall;
+                font-size:20px;
                 &:hover{
-                    color: $basic1
-                
+                    color:$basic1
                 }
             }
         }
     }
 }
+@media only  screen  and (max-width: 480px){
+nav{
+    display: grid;
+    top: 0;
+    height:15vh;
+    background-color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+    grid-template-columns: 160px 140px 130px;
+    width: 480px;
+    
+    }
+
+    nav ul li a {
+        color: #545252;
+        font-size: 13px; 
+        font-weight: 100px; 	/*peso de la de la fuente */
+        text-decoration: none; /* sacamos el subrayado*/
+        background-color: white;
+        display: inline-block;
+    
+}
+.logo
+{
+    height: 5vh;
+    align-items: flex-start;}}
+
+@media only  screen and (min-width:481px) and (max-width: 780px){
+    nav{
+        display: grid;
+        top: 0;
+        height:15vh;
+        background-color: white;
+        margin-left: 2px;
+        margin-right: 2px;
+        grid-template-columns: 190px 160px 140px;
+        width: 780px;
+        margin-bottom: 1rem;
+        }
+    
+        nav ul li a {
+            color: #545252;
+            font-size: 16px; 
+            background-color: white;
+            display: inline-block;
+        
+    }
+    .logo
+    {
+        height: 7vh;
+        align-items: flex-start;}}
+    

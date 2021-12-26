@@ -40,21 +40,16 @@ main .degrad {
   background: linear-gradient(to bottom, #e9c5c7, #EC8088); }
 
 main .contenedor1 {
-  display: grid;
-  grid-template-columns: 900px 600px;
+  display: flex;
   margin-left: 2px;
   justify-items: space-around;
   justify-content: space-around;
   margin-right: 2px;
   margin-top: 2px; }
 
-main .contenedor1 img {
-  height: 600px;
-  width: 600px; }
-
 main .contenedor1 iframe {
   height: 600px;
-  width: 900px; }
+  width: 100%; }
 
 main .contenedor2 {
   display: flex;
@@ -131,8 +126,11 @@ main .transition1:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  margin-left: 8rem;
+  margin-left: 4rem;
   margin-bottom: 2rem; }
+
+.list {
+  list-style: none; }
 
 .texto_titulo {
   color: #b85f5f; }
@@ -168,11 +166,9 @@ main .transition1:hover {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
-  margin-left: 3rem;
+  margin-left: 2rem;
   margin-bottom: 2rem;
-  margin-top: 1rem; }
-
-.box_contenido2 p {
+  margin-top: 1rem;
   text-align: center; }
 
 .box_contenido3 {
@@ -180,7 +176,7 @@ main .transition1:hover {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
-  margin-left: 3rem;
+  margin-left: 2rem;
   margin-bottom: 2rem; }
 
 .portadas_inferiores {
@@ -201,13 +197,88 @@ main .transition1:hover {
 .portada_Natacion {
   display: flex; }
 
+@media only screen and (max-width: 480px) {
+  .contenedor1 {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-items: space-around;
+    justify-content: space-around;
+    grid-template-rows: 600px;
+    width: 480px; }
+  .elegidos {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem; }
+  .box_contenido2 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: center; }
+  .box_contenido3 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem; }
+  .portadas_inferiores {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-top: 2rem; } }
+
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+  .contenedor1 {
+    display: flex;
+    justify-items: space-around;
+    justify-content: space-around;
+    grid-template-rows: 600px;
+    width: 780px; }
+  .elegidos {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem; }
+  .box_contenido2 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: center; }
+  .box_contenido3 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    margin-left: 1rem;
+    margin-bottom: 2rem; }
+  .portadas_inferiores {
+    display: grid;
+    grid-template-columns: 350px 400px;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-top: 2rem; } }
+
 .box__promociones {
   display: flex;
   padding-top: 4px;
   justify-content: center;
-  background-color: #887474;
   height: 5vh;
   text-align: center;
+  background-color: #887474;
   color: white; }
 
 .logo {
@@ -231,9 +302,52 @@ nav {
       list-style: none;
       justify-content: space-between; }
       nav ul li a {
-        font-size: 1em; }
+        font-size: 20px; }
         nav ul li a:hover {
           color: black; }
+
+@media only screen and (max-width: 480px) {
+  nav {
+    display: grid;
+    top: 0;
+    height: 15vh;
+    background-color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+    grid-template-columns: 160px 140px 130px;
+    width: 480px; }
+  nav ul li a {
+    color: #545252;
+    font-size: 13px;
+    font-weight: 100px;
+    /*peso de la de la fuente */
+    text-decoration: none;
+    /* sacamos el subrayado*/
+    background-color: white;
+    display: inline-block; }
+  .logo {
+    height: 5vh;
+    align-items: flex-start; } }
+
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+  nav {
+    display: grid;
+    top: 0;
+    height: 15vh;
+    background-color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+    grid-template-columns: 190px 160px 140px;
+    width: 780px;
+    margin-bottom: 1rem; }
+  nav ul li a {
+    color: #545252;
+    font-size: 16px;
+    background-color: white;
+    display: inline-block; }
+  .logo {
+    height: 7vh;
+    align-items: flex-start; } }
 
 footer {
   display: grid;
@@ -257,3 +371,20 @@ footer {
   font-style: italic;
   text-align: justify;
   word-spacing: 5px; }
+
+@media only screen and (max-width: 480px) {
+  .contenedor4 {
+    display: grid;
+    grid-template-columns: 160px 150px 150px;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 350px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+  .contenedor4 {
+    display: grid;
+    grid-template-columns: 225px 225px 225px;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem; } }
